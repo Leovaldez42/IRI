@@ -49,4 +49,4 @@ def Instagram():
         else:
             continue
         break
-    print("\ndownloading completed ..............")
+    print("\n \t \tdownloading completed ..............")
