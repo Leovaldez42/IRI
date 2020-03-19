@@ -15,6 +15,7 @@ termainal and write python. In case you don't get error you are good to go, othe
 ### Installing
 
 
+
 ## Deployment
 
 ### Voices
@@ -74,13 +75,12 @@ Just check the above few commands and you shall get the hang of it.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
 
 ## Authors
 
-* **Gaurav Sharma** - *Initial work*
+* **Gaurav Sharma** - *Entire work*
 
 ## License
 
