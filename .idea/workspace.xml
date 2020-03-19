@@ -1358,6 +1358,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="iri" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IRI" />
@@ -1401,7 +1406,7 @@
       <workItem from="1584556250900" duration="3940000" />
       <workItem from="1584596013517" duration="4000" />
       <workItem from="1584598267721" duration="689000" />
-      <workItem from="1584599451816" duration="805000" />
+      <workItem from="1584599451816" duration="1131000" />
     </task>
     <servers />
   </component>
