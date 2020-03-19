@@ -10,7 +10,7 @@ import pyttsx3
 import speech_recognition as sr
 import wikipedia
 
-engine = pyttsx3.init()
+engine = pyttsx3.init('')
 voices = engine.getProperty('voices')
 # for voice in voices:
 #     print(voice)
@@ -148,6 +148,9 @@ if __name__ == "__main__":
         elif 'open youtube' in query:
             speak("Opening youtube")
             webbrowser.open("https://www.youtube.com")
+        elif 'open instagram' in query:
+            speak("Opening instagram")
+            webbrowser.open("https://www.instagram.com/")
         elif 'movie' in query:
             speak("Which type of movie would you like to watch sir.")
             genre = input("Enter movie type: ").lower()
