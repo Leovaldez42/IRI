@@ -1350,6 +1350,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
@@ -1391,7 +1397,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584551914624</updated>
-      <workItem from="1584551919252" duration="916000" />
+      <workItem from="1584551919252" duration="3030000" />
+      <workItem from="1584556250900" duration="3940000" />
+      <workItem from="1584596013517" duration="4000" />
+      <workItem from="1584598267721" duration="689000" />
+      <workItem from="1584599451816" duration="805000" />
     </task>
     <servers />
   </component>
@@ -1405,32 +1415,32 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="679" y="296" key="FileChooserDialogImpl" timestamp="1584552076361">
+    <state x="679" y="296" key="FileChooserDialogImpl" timestamp="1584553931201">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="679" y="296" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1584552076361" />
-    <state width="1872" height="278" key="GridCell.Tab.0.bottom" timestamp="1584552093699">
+    <state x="679" y="296" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1584553931201" />
+    <state width="1872" height="277" key="GridCell.Tab.0.bottom" timestamp="1584602794283">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584552093699" />
-    <state width="1872" height="278" key="GridCell.Tab.0.center" timestamp="1584552093698">
+    <state width="1872" height="277" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584602794283" />
+    <state width="1872" height="277" key="GridCell.Tab.0.center" timestamp="1584602794283">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584552093698" />
-    <state width="1872" height="278" key="GridCell.Tab.0.left" timestamp="1584552093697">
+    <state width="1872" height="277" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584602794283" />
+    <state width="1872" height="277" key="GridCell.Tab.0.left" timestamp="1584602794282">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584552093697" />
-    <state width="1872" height="278" key="GridCell.Tab.0.right" timestamp="1584552093699">
+    <state width="1872" height="277" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584602794282" />
+    <state width="1872" height="277" key="GridCell.Tab.0.right" timestamp="1584602794283">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584552093699" />
+    <state width="1872" height="277" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584602794283" />
     <state x="479" y="187" key="SettingsEditor" timestamp="1584553005503">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="479" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1584553005503" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IRI$iri.coverage" NAME="iri Coverage Results" MODIFIED="1584551975845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IRI$iri.coverage" NAME="iri Coverage Results" MODIFIED="1584602794271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,17 +1,17 @@
+import datetime
+import os.path
+from instagram import Instagram
+import random
+import smtplib
+import sys
+import time
+import webbrowser
 import pyttsx3
 import speech_recognition as sr
-import webbrowser
 import wikipedia
-import sys
-import random
-import time
-import os
-import datetime
-import smtplib
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-
 # for voice in voices:
 #     print(voice)
 # print(voices[11].id)
@@ -55,6 +55,12 @@ how_are_you = {
     2: 'Your voice literally perks me up, how are you',
     3: 'I have had an exciting day looking for fun things to do, how may I help you',
     4: 'I am wonderful, how may I help'
+}
+girlfriend = {
+    1: 'I\'m all for setting dates and chatting with you',
+    2: 'I\'m here whenever you need a assistant',
+    3: 'Sorry I am committed to my work.I am sure out of the 7.2 billion people on Earth there is someone '
+       'for you, what about Aditi?'
 }
 
 
@@ -137,7 +143,7 @@ if __name__ == "__main__":
         elif 'hello' in query:
             speak("Hi sir")
         elif 'how are you' in query:
-            # Go to dictionary how are you to check commands
+            # Go to dictionary how_are_you to check commands
             speak(how_are_you.get(random.randint(1, len(how_are_you))))
         elif 'open youtube' in query:
             speak("Opening youtube")
@@ -146,17 +152,20 @@ if __name__ == "__main__":
             speak("Which type of movie would you like to watch sir.")
             genre = input("Enter movie type: ").lower()
             if genre in movies:
-                string = "https://moviegaga.to/suggest-me?t=0&g="+str(movies.get(genre))
+                string = "https://moviegaga.to/suggest-me?t=0&g=" + str(movies.get(genre))
                 webbrowser.open(string)
             else:
                 webbrowser.open('https://moviegaga.to')
         elif 'open google' in query:
+            speak("Want to search something sir?")
             speak("Opening google.com")
             webbrowser.open("https://www.google.com/")
         elif 'open stackoverflow' in query:
+            speak("Have a coding doubt sir?")
             speak("Opening stackoverflow")
             webbrowser.open("https://stackoverflow.com/")
         elif 'open gmail' in query:
+            speak("Good time to check some email.")
             speak("Opening gmail")
             webbrowser.open("https://mail.google.com/mail/u/0/#inbox")
         elif 'open github' in query:
@@ -195,8 +204,8 @@ if __name__ == "__main__":
             speak("Bye Sir, have a great day ahead")
             sys.exit()
         elif 'girlfriend' in query:
-            speak("Sorry I am commited to my work.")
-            speak("I am sure out of the 7.2 billion people on Earth there is someone for you, what about Aditi?")
+            speak("Concentrate on studies Gaurav and as regarding girlfriend")
+            speak(girlfriend.get(random.randint(1, len(girlfriend))))
         elif "don't listen" in query or "stop listening" in query:
             speak("for how much time you want to stop iri from listening commands")
             a = int(take_command())
@@ -215,6 +224,8 @@ if __name__ == "__main__":
                 exit()
             else:
                 os.system("shutdown /r /t 1")
+        elif 'check instagram' in query:
+            Instagram()
         elif 'bored' in query:
             os.system('Alien_invasion/alien_invasion.py')
 
