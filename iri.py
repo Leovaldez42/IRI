@@ -10,7 +10,7 @@ import pyttsx3
 import speech_recognition as sr
 import wikipedia
 
-engine = pyttsx3.init('')
+engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 # for voice in voices:
 #     print(voice)
@@ -142,7 +142,7 @@ if __name__ == "__main__":
             speak(results)
         elif 'hello' in query:
             speak("Hi sir")
-        elif 'how are you' in query:
+        elif 'how are you' in query or 'what\'s up' in query:
             # Go to dictionary how_are_you to check commands
             speak(how_are_you.get(random.randint(1, len(how_are_you))))
         elif 'open youtube' in query:
