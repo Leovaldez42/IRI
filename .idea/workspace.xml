@@ -3,9 +3,49 @@
   <component name="ChangeListManager">
     <list default="true" id="60b27f5e-fbb7-4f2f-9dd7-ebdb6cbfaed8" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Alien-Invasion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/alien.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/bullets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/button.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/fonts/ContrailOne.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/fonts/PoiretOne.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/fonts/RammettoOne.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/fonts/RussoOne.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/fonts/Viga.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/game_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/game_items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/game_stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/images/alien1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/images/alien2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/images/ship1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/save/highscore.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/scorecard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alien-invasion/ship.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion" beforeDir="false" afterPath="$PROJECT_DIR$/Alien-Invasion" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alien-Invasion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/alien.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/bullets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/button.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/fonts/ContrailOne.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/fonts/PoiretOne.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/fonts/RammettoOne.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/fonts/RussoOne.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/fonts/Viga.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/game_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/game_items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/game_stats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/images/alien1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/images/alien2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/images/ship1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/save/highscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/scorecard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/ship.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +67,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/alien-invasion/game.py" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,11 +77,14 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.iri">
+  <component name="RunManager" selected="Python.game">
     <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IRI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -50,12 +93,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Alien-Invasion/alien-invasion" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/alien-invasion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Alien-Invasion/alien-invasion/game.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alien-invasion/game.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,10 +129,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.game" />
+      <item itemvalue="Python.iri" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.iri" />
         <item itemvalue="Python.game" />
+        <item itemvalue="Python.iri" />
       </list>
     </recent_temporary>
   </component>
@@ -113,6 +160,7 @@
       <workItem from="1584796535056" duration="924000" />
       <workItem from="1584804563341" duration="4884000" />
       <workItem from="1584877081046" duration="527000" />
+      <workItem from="1584898517381" duration="456000" />
     </task>
     <servers />
   </component>
@@ -126,30 +174,34 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584899002591">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584899002591" />
     <state x="0" y="690" width="807" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584866268223">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="0" y="690" width="807" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1584866268223" />
-    <state x="679" y="296" key="FileChooserDialogImpl" timestamp="1584553931201">
+    <state x="679" y="296" key="FileChooserDialogImpl" timestamp="1584898999020">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="679" y="296" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1584553931201" />
-    <state width="1872" height="277" key="GridCell.Tab.0.bottom" timestamp="1584877255498">
+    <state x="679" y="296" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1584898999020" />
+    <state width="1872" height="277" key="GridCell.Tab.0.bottom" timestamp="1584899004351">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584877255498" />
-    <state width="1872" height="277" key="GridCell.Tab.0.center" timestamp="1584877255498">
+    <state width="1872" height="277" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584899004351" />
+    <state width="1872" height="277" key="GridCell.Tab.0.center" timestamp="1584899004351">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584877255497" />
-    <state width="1872" height="277" key="GridCell.Tab.0.left" timestamp="1584877255497">
+    <state width="1872" height="277" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584899004351" />
+    <state width="1872" height="277" key="GridCell.Tab.0.left" timestamp="1584899004351">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584877255497" />
-    <state width="1872" height="277" key="GridCell.Tab.0.right" timestamp="1584877255498">
+    <state width="1872" height="277" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584899004350" />
+    <state width="1872" height="277" key="GridCell.Tab.0.right" timestamp="1584899004351">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584877255498" />
+    <state width="1872" height="277" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584899004351" />
     <state x="479" y="187" key="SettingsEditor" timestamp="1584603116623">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -160,7 +212,7 @@
     <state x="564" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584804563350" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IRI$iri.coverage" NAME="iri Coverage Results" MODIFIED="1584877255482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IRI$game.coverage" NAME="game Coverage Results" MODIFIED="1584635698032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alien-Invasion/alien-invasion" />
+    <SUITE FILE_PATH="coverage/IRI$iri.coverage" NAME="iri Coverage Results" MODIFIED="1584898865103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IRI$game.coverage" NAME="game Coverage Results" MODIFIED="1584899004341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien-invasion" />
   </component>
 </project>
