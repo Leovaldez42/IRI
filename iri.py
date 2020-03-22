@@ -21,7 +21,8 @@ client = wolframalpha.Client('your-wolfram-id')
 engine.setProperty('voice', 'english')
 
 emails = {
-    'myself': 'gaurav4.037@gmail.com'
+    'myself': 'youremail@abcd.com',
+    'your_friend': 'his_email@abcd.com'
 
 }
 movies = {
