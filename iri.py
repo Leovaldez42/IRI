@@ -59,8 +59,6 @@ how_are_you = {
 girlfriend = {
     1: 'I\'m all for setting dates and chatting with you',
     2: 'I\'m here whenever you need a assistant',
-    3: 'Sorry I am committed to my work.I am sure out of the 7.2 billion people on Earth there is someone '
-       'for you, what about Aditi?'
 }
 
 
@@ -166,7 +164,7 @@ if __name__ == "__main__":
         elif 'open stackoverflow' in query:
             speak("Have a coding doubt sir?")
             speak("Opening stackoverflow")
-            webbrowser.open("https://stackoverflow.com/")
+            webbrowser.open("https://stackoverflow.com/")       # Replace this with your file location on windows
         elif 'open gmail' in query:
             speak("Good time to check some email.")
             speak("Opening gmail")
@@ -182,13 +180,13 @@ if __name__ == "__main__":
             speak(f"Sir the time is {strTime}")
         elif 'open code' in query:
             speak("Opening VS code")
-            os.system('code')
+            os.system('code')                                   # Replace this with your file location on windows
         elif 'open sublime' in query:
             speak("Opening sublime text")
-            os.system('sublime-text.subl')
+            os.system('sublime-text.subl')                      # Replace this with your file location on windows
         elif 'open pycharm' in query:
             speak("Opening Pycharm-Profession")
-            os.system('pycharm-professional')
+            os.system('pycharm-professional')                   # Replace this with your file location on windows
         # # elif 'face' in query:
         # #     os.system('pass')
         elif 'send email' in query:
