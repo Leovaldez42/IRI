@@ -42,20 +42,20 @@ and line 18 with
 engine.setProperty('voice', voices[0].id)   # Replace 0 with 1 for female voice
 ```
 
-## emails
+### emails
 This shall be used to send emails through the voice command. To use it
 type the name of the person and his/her email id as per the format.
 
-##movies
+### movies
 I have used movieninja.io to open movies, you can change it as per your convenience.
 
-##how_are_you and girlfriend
+### how_are_you and girlfriend
 You can change the sentences as you wish.
 
-## wish_me
+### wish_me
 You can change this as per your convenience. 
 
-## Using send email 
+### Using send email 
 1) If you do not have google account create one.
 2) Open your gmail account and go to manage your google account, Security.
 3) Scroll down and allow less secure apps.
