@@ -13,7 +13,7 @@ to install all the packages required.
 
 ### Prerequisites
 
-Make sure you have python 3.6 or higer installed on your device. To check 
+Make sure you have python 3.6 or higher installed on your device. To check 
 python version on your device type
 
 ```
@@ -22,7 +22,11 @@ python
 If it does not give any error it means python is installed on your device
 and you can also check the version.
 
-
+Also run the following commands on terminal/ powershell
+```
+pip install --upgrade pip
+pip install pywin32
+```
 ## Deployment
 
 For linux users: You can use the voice commands printed on line 13-18 as it is. In case you want to change the voice
@@ -71,7 +75,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Billie Gaurav Sharma** 
+* **Gaurav Sharma** 
 
 ## License
 
