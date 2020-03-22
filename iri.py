@@ -1,6 +1,5 @@
 import datetime
 import os.path
-from instagram import Instagram
 import random
 import smtplib
 import sys
@@ -9,16 +8,20 @@ import webbrowser
 import pyttsx3
 import speech_recognition as sr
 import wikipedia
+import wolframalpha
+from instagram import Instagram
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
+client = wolframalpha.Client('your-wolfram-id')
+
 # for voice in voices:
 #     print(voice)
 # print(voices[11].id)
-engine.setProperty('voice', 'english')  # 11 is for english
+engine.setProperty('voice', 'english')
 
 emails = {
-    'name': 'email@gmail.com'
+    'myself': 'gaurav4.037@gmail.com'
 
 }
 movies = {
@@ -71,24 +74,24 @@ def wish_me():
     hour = int(datetime.datetime.now().hour)
     if 5 <= hour < 8:
         speak("Hello Gaurav, Good morning. You are working quite early today.")
-        strTime = datetime.datetime.now().strftime("%H:%M")
-        speak(f"Sir the time is {strTime}")
+        time_now = datetime.datetime.now().strftime('%H:%M')
+        speak(f"Sir the time is {time_now}")
     elif 8 <= hour <= 12:
         speak("Hello Gaurav, Good morning")
-        strTime = datetime.datetime.now().strftime("%H:%M")
-        speak(f"Sir the time is {strTime}")
+        time_now = datetime.datetime.now().strftime("%H:%M")
+        speak(f"Sir the time is {time_now}")
     elif 12 <= hour < 18:
         speak("Hello Gaurav, good afternoon, nice to have you back")
-        strTime = datetime.datetime.now().strftime("%H:%M")
-        speak(f"Sir the time is {strTime}")
+        time_now = datetime.datetime.now().strftime("%H:%M")
+        speak(f"Sir the time is {time_now}")
     elif 18 <= hour <= 22:
         speak("Hello Gaurav, Good Evening, nice to have you back")
-        strTime = datetime.datetime.now().strftime("%H:%M")
-        speak(f"Sir the time is {strTime}")
+        time_now = datetime.datetime.now().strftime("%H:%M")
+        speak(f"Sir the time is {time_now}")
     else:
         speak("Hello Gaurav, Good gracious you are working quite late sir")
-        strTime = datetime.datetime.now().strftime("%H:%M")
-        speak(f"Sir the time is {strTime}")
+        time_now = datetime.datetime.now().strftime("%H:%M")
+        speak(f"Sir the time is {time_now}")
 
     speak("Please tell me how may I help you.")
 
@@ -97,8 +100,8 @@ def send_email(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login("youremail@gmail.com", "your_password")
-    server.sendmail("youremail@gmail.com", to, content)
+    server.login("leo4fun.4@gmail.com", "#Gauravsharma4")
+    server.sendmail("leo4fun.4@gmail.com", to, content)
     server.close()
 
 
@@ -140,15 +143,12 @@ if __name__ == "__main__":
             speak(results)
         elif 'hello' in query:
             speak("Hi sir")
-        elif 'how are you' in query or 'what\'s up' in query:
+        elif 'how are you' in query:
             # Go to dictionary how_are_you to check commands
             speak(how_are_you.get(random.randint(1, len(how_are_you))))
         elif 'open youtube' in query:
             speak("Opening youtube")
             webbrowser.open("https://www.youtube.com")
-        elif 'open instagram' in query:
-            speak("Opening instagram")
-            webbrowser.open("https://www.instagram.com/")
         elif 'movie' in query:
             speak("Which type of movie would you like to watch sir.")
             genre = input("Enter movie type: ").lower()
@@ -164,7 +164,7 @@ if __name__ == "__main__":
         elif 'open stackoverflow' in query:
             speak("Have a coding doubt sir?")
             speak("Opening stackoverflow")
-            webbrowser.open("https://stackoverflow.com/")       # Replace this with your file location on windows
+            webbrowser.open("https://stackoverflow.com/")
         elif 'open gmail' in query:
             speak("Good time to check some email.")
             speak("Opening gmail")
@@ -180,13 +180,13 @@ if __name__ == "__main__":
             speak(f"Sir the time is {strTime}")
         elif 'open code' in query:
             speak("Opening VS code")
-            os.system('code')                                   # Replace this with your file location on windows
+            os.system('code')
         elif 'open sublime' in query:
             speak("Opening sublime text")
-            os.system('sublime-text.subl')                      # Replace this with your file location on windows
+            os.system('sublime-text.subl')
         elif 'open pycharm' in query:
             speak("Opening Pycharm-Profession")
-            os.system('pycharm-professional')                   # Replace this with your file location on windows
+            os.system('pycharm-professional')
         # # elif 'face' in query:
         # #     os.system('pass')
         elif 'send email' in query:
@@ -230,12 +230,23 @@ if __name__ == "__main__":
         elif 'bored' in query:
             os.system('Alien_invasion/alien_invasion.py')
 
-        elif 'google it' in query or 'search' in query or 'what is' in query:
-            print(query)
-            answer = take_command().lower()
-            if 'yes' in answer or 'yeah' in answer or 'yup' or 'thrill me' in answer:
-                string = str("https://www.google.com/search?q =" + '+'.join(str(query)))
-                print(string)
-                webbrowser.open(string)
-            else:
-                pass
+        else:
+            speak('Searching...')
+            try:
+                try:
+                    res = client.query(query)
+                    results = next(res.results).text
+                    speak('WOLFRAM-ALPHA says - ')
+                    speak('Got it.')
+                    speak(results)
+                    print(results)
+
+                except:
+                    results = wikipedia.summary(query, sentences=2)
+                    speak('Got it.')
+                    speak('WIKIPEDIA says - ')
+                    speak(results)
+                    print(results)
+
+            except:
+                webbrowser.open('www.google.com')
