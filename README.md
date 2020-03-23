@@ -4,7 +4,7 @@ A virtual assistant to do daily tasks
 
 ## Getting Started
 
-Click the clone repository button. Follow the prerequisites and run 
+Click the clone repository button. Follow the prerequisites and run
 ```
 pip install -r requirements.txt
 ```
