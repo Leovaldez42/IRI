@@ -4,7 +4,7 @@ A virtual assistant to do daily tasks
 
 ## Getting Started
 
-Click the clone repository button and type 
+Click the clone repository button. Follow the prerequisites and run 
 ```
 pip install -r requirements.txt
 ```
@@ -30,21 +30,27 @@ pip install pywin32
 ## Deployment
 
 For linux users: You can use the voice commands printed on line 13-18 as it is. In case you want to change the voice
-uncomment the lines 15-16 as
+uncomment the lines 18-19 as
 ```
 for voice in voices:
     print(voice)
 ```
 and choose the voice you require. Then replace 'english' with the voice id.
 
-For windows users: Replace line 13 with
+For windows users: Replace line 14 with
 ```
 engine = pyttsx3.init('sapi5')
 ```
-and line 18 with
+and line 21 with
 ```
 engine.setProperty('voice', voices[0].id)   # Replace 0 with 1 for female voice
 ```
+### Client
+1) Go to https://www.wolframalpha.com
+2) Sign in, in case you do not have account sign up.
+3) On the right most corner click your account and head over to My Apps(API)
+4) Click get an APP-ID and fill the required information and get an app-id
+5) Replace your-wolfram-id with your app-id
 
 ### emails
 This shall be used to send emails through the voice command. To use it
@@ -65,6 +71,21 @@ You can change this as per your convenience.
 3) Scroll down and allow less secure apps.
 4) On line 102 replace "youremail@gmail.com" with your gmail id and "your_password" with its password
 5) On line 103 replace "youremail@gmail.com" with your email id.
+
+### take_command
+You can adjust phrase_time_limit as per your convenience.
+
+### main
+You can adjust various commands as you wish, follow the below mention things.
+1) In case of opening vs-code and sublime on windows open file location 
+of them, click on properties and copy the target and replace it with 'code'. 
+Whereever there is \ make it \\. Do the same for all.
+#####using send email
+1) say send email
+2) using the list of emails, type the name to whom you want to send email to.
+3) Type the content of email.
+4) Click enter.
+5) Email would have been sent.
 
 ## Contributing
 
