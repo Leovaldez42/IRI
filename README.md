@@ -69,8 +69,8 @@ You can change this as per your convenience.
 1) If you do not have google account create one.
 2) Open your gmail account and go to manage your google account, Security.
 3) Scroll down and allow less secure apps.
-4) On line 102 replace "youremail@gmail.com" with your gmail id and "your_password" with its password
-5) On line 103 replace "youremail@gmail.com" with your email id.
+4) On line 104 replace "youremail@gmail.com" with your gmail id and "your_password" with its password
+5) On line 105 replace "youremail@gmail.com" with your email id.
 
 ### take_command
 You can adjust phrase_time_limit as per your convenience.
@@ -79,7 +79,7 @@ You can adjust phrase_time_limit as per your convenience.
 You can adjust various commands as you wish, follow the below mention things.
 1) In case of opening vs-code and sublime on windows open file location 
 of them, click on properties and copy the target and replace it with 'code'. 
-Whereever there is \ make it \\. Do the same for all.
+Where-ever there is \ make it \\. Do the same for all.
 #####using send email
 1) say send email
 2) using the list of emails, type the name to whom you want to send email to.
