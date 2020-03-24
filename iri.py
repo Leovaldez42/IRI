@@ -182,6 +182,9 @@ if __name__ == "__main__":
         elif "time" in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Sir the time is {strTime}")
+        elif 'open wolfram alpha' in query:
+            speak("Opening wolfram alpha")
+            webbrowser.open('https://www.wolframalpha.com/')
         elif 'open code' in query:
             speak("Opening VS code")
             os.system('code')
@@ -235,22 +238,28 @@ if __name__ == "__main__":
             os.system('python alien-invasion/game.py')
 
         else:
-            speak('Searching...')
-            try:
+            speak("Do you want me to search " + query)
+            answer = take_command()
+            if "yes" in answer or "yup" in answer or "thrill me" in answer:
+
+                speak('Searching...')
                 try:
-                    res = client.query(query)
-                    results = next(res.results).text
-                    speak('WOLFRAM-ALPHA says - ')
-                    speak('Got it.')
-                    speak(results)
-                    print(results)
+                    try:
+                        res = client.query(query)
+                        results = next(res.results).text
+                        speak('WOLFRAM-ALPHA says - ')
+                        speak('Got it.')
+                        speak(results)
+                        print(results)
+
+                    except:
+                        results = wikipedia.summary(query, sentences=2)
+                        speak('Got it.')
+                        speak('WIKIPEDIA says - ')
+                        speak(results)
+                        print(results)
 
                 except:
-                    results = wikipedia.summary(query, sentences=2)
-                    speak('Got it.')
-                    speak('WIKIPEDIA says - ')
-                    speak(results)
-                    print(results)
-
-            except:
-                webbrowser.open('https://www.google.com/')
+                    webbrowser.open('https://www.google.com/')
+            else:
+                speak("Okay I won't search that")
