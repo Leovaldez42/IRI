@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60b27f5e-fbb7-4f2f-9dd7-ebdb6cbfaed8" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Alien-Invasion/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion" beforeDir="false" afterPath="$PROJECT_DIR$/Alien-Invasion" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alien-Invasion/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/__init__.py" beforeDir="false" />
@@ -26,7 +25,7 @@
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/scorecard.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/ship.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iri.py" beforeDir="false" afterPath="$PROJECT_DIR$/iri.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +145,7 @@
       <workItem from="1584959295723" duration="2030000" />
       <workItem from="1584961334794" duration="2194000" />
       <workItem from="1584966247699" duration="829000" />
+      <workItem from="1585033535235" duration="300000" />
     </task>
     <servers />
   </component>
