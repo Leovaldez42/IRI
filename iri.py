@@ -236,7 +236,7 @@ if __name__ == "__main__":
             Instagram()
         elif 'bored' in query or 'game' in query:
             speak("Feeling bored sir, let's play a game")
-            os.system('python IRI/alien-invasion/game.py')
+            os.system('python alien-invasion/game.py')
 
         else:
             speak("Do you want me to search " + query)
