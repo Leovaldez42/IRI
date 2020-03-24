@@ -58,7 +58,10 @@ how_are_you = {
     1: 'Thank you for asking, I am well. How can I help you',
     2: 'Your voice literally perks me up, how are you',
     3: 'I have had an exciting day looking for fun things to do, how may I help you',
-    4: 'I am wonderful, how may I help'
+    4: 'I am wonderful, how may I help',
+    5: "I'm fine, thank you, what can I do for you",
+    6: "Good to hear from you! How may I help",
+    7: "Today has been inspiring. We can learn a lot of new things, how may I help"
 }
 girlfriend = {
     1: 'I\'m all for setting dates and chatting with you',
