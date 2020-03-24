@@ -234,7 +234,8 @@ if __name__ == "__main__":
                 os.system("shutdown /r /t 1")
         elif 'check instagram' in query:
             Instagram()
-        elif 'bored' in query:
+        elif 'bored' in query or 'game' in query:
+            speak("Feeling bored sir, let's play a game")
             os.system('python IRI/alien-invasion/game.py')
 
         else:
