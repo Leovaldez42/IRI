@@ -26,7 +26,6 @@
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/scorecard.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/ship.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iri.py" beforeDir="false" afterPath="$PROJECT_DIR$/iri.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.iri">
+  <component name="RunManager" selected="Python.game">
     <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IRI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,8 +115,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.iri" />
         <item itemvalue="Python.game" />
+        <item itemvalue="Python.iri" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +146,7 @@
       <workItem from="1584961334794" duration="2194000" />
       <workItem from="1584966247699" duration="829000" />
       <workItem from="1585033535235" duration="1490000" />
-      <workItem from="1585058612611" duration="896000" />
+      <workItem from="1585058612611" duration="2031000" />
     </task>
     <servers />
   </component>
@@ -161,10 +160,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584962671097">
+    <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585061470417">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584962671097" />
+    <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1585061470417" />
     <state x="0" y="690" width="807" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584866268223">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -173,22 +172,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="679" y="296" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1584898999020" />
-    <state width="1872" height="277" key="GridCell.Tab.0.bottom" timestamp="1585058925690">
+    <state width="1872" height="203" key="GridCell.Tab.0.bottom" timestamp="1585061491102">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1585058925690" />
-    <state width="1872" height="277" key="GridCell.Tab.0.center" timestamp="1585058925689">
+    <state width="1872" height="203" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1585061491102" />
+    <state width="1872" height="203" key="GridCell.Tab.0.center" timestamp="1585061491101">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1585058925689" />
-    <state width="1872" height="277" key="GridCell.Tab.0.left" timestamp="1585058925689">
+    <state width="1872" height="203" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1585061491101" />
+    <state width="1872" height="203" key="GridCell.Tab.0.left" timestamp="1585061491101">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1585058925689" />
-    <state width="1872" height="277" key="GridCell.Tab.0.right" timestamp="1585058925689">
+    <state width="1872" height="203" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1585061491101" />
+    <state width="1872" height="203" key="GridCell.Tab.0.right" timestamp="1585061491101">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585058925689" />
+    <state width="1872" height="203" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585061491101" />
     <state width="1872" height="343" key="GridCell.Tab.1.bottom" timestamp="1584963533352">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -215,7 +214,7 @@
     <state x="564" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1585058619174" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IRI$iri.coverage" NAME="iri Coverage Results" MODIFIED="1585058925677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IRI$game.coverage" NAME="game Coverage Results" MODIFIED="1584962768519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien-invasion" />
+    <SUITE FILE_PATH="coverage/IRI$iri.coverage" NAME="iri Coverage Results" MODIFIED="1585060027936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IRI$game.coverage" NAME="game Coverage Results" MODIFIED="1585061491092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien-invasion" />
   </component>
 </project>
