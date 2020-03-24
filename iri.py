@@ -253,4 +253,4 @@ if __name__ == "__main__":
                     print(results)
 
             except:
-                webbrowser.open('www.google.com')
+                webbrowser.open('https://www.google.com/')
