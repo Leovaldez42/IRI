@@ -11,7 +11,7 @@ class Alien(Sprite):
     """A class to represent a single alien in a fleet."""
 
     def __init__(self, ai_settings: Settings, screen: pygame.SurfaceType,
-                 image_name='images/alien1.png'):
+                 image_name='alien-invasion/images/alien1.png'):
         """Initialize the alien and set its starting position."""
 
         super().__init__()

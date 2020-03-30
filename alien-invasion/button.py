@@ -15,7 +15,7 @@ class Button:
             self.button_color += (self.button_transparency, )      # add alpha channel
         self.text_color = (255, 255, 255)
 
-        self.font = pygame.font.Font('fonts/RussoOne.ttf', size)
+        self.font = pygame.font.Font('alien-invasion/fonts/RussoOne.ttf', size)
 
         self.prep_msg(msg)
 

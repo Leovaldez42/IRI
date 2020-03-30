@@ -21,7 +21,7 @@ class Scorecard:
         self.dur_highscore_msg = 3000        # duration of highscore msg = 3 sec
 
         # Font settings.
-        font_name = 'fonts/PoiretOne.ttf'       # try changing the font
+        font_name = 'alien-invasion/fonts/PoiretOne.ttf'       # try changing the font
         self.font_color = self.ai_settings.score_font_color
         self.font = pygame.font.Font(font_name, self.ai_settings.score_font_size)
 

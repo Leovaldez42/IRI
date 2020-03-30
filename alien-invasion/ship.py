@@ -8,7 +8,7 @@ from settings import Settings
 
 class Ship(Sprite):
     def __init__(self, ai_settings: Settings, screen: pygame.SurfaceType
-                 , size=(0, 0), image_name="images/ship1.png"):
+                 , size=(0, 0), image_name="alien-invasion/images/ship1.png"):
         """Initialize the ship and set its starting position."""
         super().__init__()
         self.screen = screen
