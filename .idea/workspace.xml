@@ -26,8 +26,7 @@
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/scorecard.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alien-Invasion/alien-invasion/ship.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien-invasion/button.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien-invasion/button.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien-invasion/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien-invasion/ship.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +149,8 @@
       <workItem from="1585033535235" duration="1490000" />
       <workItem from="1585058612611" duration="2222000" />
       <workItem from="1585062271499" duration="1234000" />
-      <workItem from="1585587523810" duration="298000" />
+      <workItem from="1585587523810" duration="1069000" />
+      <workItem from="1585600407794" duration="222000" />
     </task>
     <servers />
   </component>
@@ -176,22 +176,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="679" y="296" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1584898999020" />
-    <state width="1872" height="203" key="GridCell.Tab.0.bottom" timestamp="1585587921135">
+    <state width="1872" height="203" key="GridCell.Tab.0.bottom" timestamp="1585590120062">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="203" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1585587921134" />
-    <state width="1872" height="203" key="GridCell.Tab.0.center" timestamp="1585587921133">
+    <state width="1872" height="203" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1585590120062" />
+    <state width="1872" height="203" key="GridCell.Tab.0.center" timestamp="1585590120061">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="203" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1585587921133" />
-    <state width="1872" height="203" key="GridCell.Tab.0.left" timestamp="1585587921132">
+    <state width="1872" height="203" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1585590120061" />
+    <state width="1872" height="203" key="GridCell.Tab.0.left" timestamp="1585590120060">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="203" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1585587921132" />
-    <state width="1872" height="203" key="GridCell.Tab.0.right" timestamp="1585587921134">
+    <state width="1872" height="203" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1585590120060" />
+    <state width="1872" height="203" key="GridCell.Tab.0.right" timestamp="1585590120061">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="203" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585587921134" />
+    <state width="1872" height="203" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585590120061" />
     <state width="1872" height="343" key="GridCell.Tab.1.bottom" timestamp="1584963533352">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

@@ -27,6 +27,13 @@ Also run the following commands on terminal/ powershell
 pip install --upgrade pip
 pip install pywin32
 ```
+In case you get error
+* **ImportError: No module named pythoncom**
+run the following command on terminal
+```
+pip install pypiwin32
+```
+
 ## Deployment
 
 For linux users: You can use the voice commands printed on line 13-18 as it is. In case you want to change the voice
@@ -80,6 +87,7 @@ You can adjust various commands as you wish, follow the below mention things.
 1) In case of opening vs-code and sublime on windows open file location 
 of them, click on properties and copy the target and replace it with 'code'. 
 Where-ever there is \ make it \\. Do the same for all.
+
 #####using send email
 1) say send email
 2) using the list of emails, type the name to whom you want to send email to.
