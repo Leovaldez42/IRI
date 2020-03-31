@@ -37,18 +37,18 @@ pip install pypiwin32
 ## Deployment
 
 For linux users: You can use the voice commands printed on line 13-18 as it is. In case you want to change the voice
-uncomment the lines 18-19 as
+uncomment the lines 19-20 as
 ```
 for voice in voices:
     print(voice)
 ```
 and choose the voice you require. Then replace 'english' with the voice id.
 
-For windows users: Replace line 14 with
+For windows users: Replace line 15 with
 ```
 engine = pyttsx3.init('sapi5')
 ```
-and line 21 with
+and line 22 with
 ```
 engine.setProperty('voice', voices[0].id)   # Replace 0 with 1 for female voice
 ```
@@ -99,9 +99,21 @@ Where-ever there is \ make it \\. Do the same for all.
 
 Please read [CONTRIBUTING.md](https://github.com/Leovaldez42/IRI/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
+
+## What's new
+Now you can add birthdays of your friends as tell your assistant to remember it.
+
+Now you can play a game on this
+
+Now it gives you information about weather
+
+Now you can order you AI to open movies.
+
+Now your AI can download DP of instagram users.
+
 ## Versioning
 
-1.0.5
+1.1.3
 
 ## Authors
 
