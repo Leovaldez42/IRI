@@ -1,9 +1,10 @@
-import datetime
 import os.path
 import random
 import smtplib
 import sys
 import time
+import datetime
+import calendar
 import webbrowser
 import pyttsx3
 import speech_recognition as sr
@@ -67,6 +68,19 @@ girlfriend = {
     1: 'I\'m all for setting dates and chatting with you',
     2: 'I\'m here whenever you need a assistant',
 }
+birthdays = {
+    'gaurav': '04/11/2000',
+    'yours_friend': 'dd/mm/yyyy'
+}
+
+
+def today():
+    return datetime.date.today().strftime('%d/%m/%y')
+
+
+def findDay(date_to_find_week):
+    born = datetime.datetime.strptime(date_to_find_week, '%d %m %Y').weekday()
+    return calendar.day_name[born]
 
 
 def speak(audio):
@@ -134,7 +148,7 @@ def take_command():
 
 
 if __name__ == "__main__":
-    wish_me()
+    # wish_me()
     while True:
         query = take_command().lower()
         # Logic for executing task
@@ -161,6 +175,7 @@ if __name__ == "__main__":
                 webbrowser.open(string)
             else:
                 webbrowser.open('https://moviegaga.to')
+
         elif 'open google' in query:
             speak("Want to search something sir?")
             speak("Opening google.com")
@@ -179,9 +194,14 @@ if __name__ == "__main__":
         elif 'open codechef' in query:
             speak("Feeling like coding sir great")
             webbrowser.open("https://www.codechef.com/")
+
+        elif 'date' in query:
+            date_today = today().strftime("%d/%m/%Y")
+            speak(date_today)
         elif "time" in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Sir the time is {strTime}")
+
         elif 'open wolfram alpha' in query:
             speak("Opening wolfram alpha")
             webbrowser.open('https://www.wolframalpha.com/')
@@ -208,18 +228,32 @@ if __name__ == "__main__":
             except Exception as e:
                 print(e)
                 speak("I am not able to send the email")
-        elif 'bye' in query or 'sleep' in query:
-            speak("Bye Sir, have a great day ahead")
-            sys.exit()
+        elif 'which day' in query:
+            speak("Enter the date in the pattern given bellow")
+            date_to_find_week = input("dd mm yyyy (including the spaces")
+            speak(findDay(date_to_find_week))
+            print(findDay(date_to_find_week))
+        elif 'birthday' in query:
+            speak("Whose birthday you want to find out: ")
+            birthday_boy = str(input()).lower()
+            try:
+                speak(birthday_boy + 's birthday is on' + birthdays.get(birthday_boy) + '.')
+            except:
+                speak("There is no such name in your list.")
+
         elif 'girlfriend' in query:
             speak("Concentrate on studies Gaurav and as regarding girlfriend")
             speak(girlfriend.get(random.randint(1, len(girlfriend))))
+        elif 'bye' in query or 'sleep' in query:
+            speak("Bye Sir, have a great day ahead")
+            sys.exit()
         elif "don't listen" in query or "stop listening" in query:
             speak("for how much time you want to stop iri from listening commands")
             a = int(take_command())
             print(a)
             time.sleep(a)
             print(a)
+
         elif 'shutdown' in query:
             shutdown = input("Do you wish to shutdown your computer ? (yes / no): ")
             if shutdown == 'no':
@@ -233,6 +267,7 @@ if __name__ == "__main__":
             else:
                 os.system("shutdown /r /t 1")
         elif 'check instagram' in query:
+            speak("Opening instagram dp downloader")
             Instagram()
         elif 'bored' in query or 'game' in query:
             speak("Feeling bored sir, let's play a game")
