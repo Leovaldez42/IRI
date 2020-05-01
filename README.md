@@ -44,11 +44,11 @@ for voice in voices:
 ```
 and choose the voice you require. Then replace 'english' with the voice id.
 
-For windows users: Replace line 15 with
+For windows users: Replace line 19 with
 ```
 engine = pyttsx3.init('sapi5')
 ```
-and line 22 with
+and line 26 with
 ```
 engine.setProperty('voice', voices[0].id)   # Replace 0 with 1 for female voice
 ```
@@ -76,8 +76,8 @@ You can change this as per your convenience.
 1) If you do not have google account create one.
 2) Open your gmail account and go to manage your google account, Security.
 3) Scroll down and allow less secure apps.
-4) On line 104 replace "youremail@gmail.com" with your gmail id and "your_password" with its password
-5) On line 105 replace "youremail@gmail.com" with your email id.
+4) On line 127 replace "youremail@gmail.com" with your gmail id and "your_password" with its password
+5) On line 128 replace "youremail@gmail.com" with your email id.
 
 ### take_command
 You can adjust phrase_time_limit as per your convenience.
@@ -101,6 +101,12 @@ Please read [CONTRIBUTING.md](https://github.com/Leovaldez42/IRI/blob/master/CON
 
 
 ## What's new
+You can get real time updates of corona virus and bitcoin.
+
+You can take a screenshot with python just by saying screenshot.
+
+You can now play music with this application.
+
 Now you can add birthdays of your friends as tell your assistant to remember it.
 
 Now you can play a game on this
@@ -113,7 +119,7 @@ Now your AI can download DP of instagram users.
 
 ## Versioning
 
-1.1.3
+1.1.5
 
 ## Authors
 
