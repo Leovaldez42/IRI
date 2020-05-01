@@ -1,12 +1,16 @@
+import datetime
 import os.path
 import random
 import smtplib
 import sys
 import time
-import datetime
-import calendar
+import requests
+import pyautogui
+from pygame import mixer
 import webbrowser
 import pyttsx3
+from bs4 import BeautifulSoup
+import platform
 import speech_recognition as sr
 import wikipedia
 import wolframalpha
@@ -72,6 +76,8 @@ birthdays = {
     'gaurav': '04/11/2000',
     'yours_friend': 'dd/mm/yyyy'
 }
+your_user_name = 'Gaurav'
+my_name = 'IRI'
 
 
 def today():
@@ -91,23 +97,23 @@ def speak(audio):
 def wish_me():
     hour = int(datetime.datetime.now().hour)
     if 5 <= hour < 8:
-        speak("Hello Gaurav, Good morning. You are working quite early today.")
+        speak(f"Hello {your_user_name}, Good morning. You are working quite early today.")
         time_now = datetime.datetime.now().strftime('%H:%M')
         speak(f"Sir the time is {time_now}")
     elif 8 <= hour <= 12:
-        speak("Hello Gaurav, Good morning")
+        speak(f"Hello {your_user_name}, Good morning")
         time_now = datetime.datetime.now().strftime("%H:%M")
         speak(f"Sir the time is {time_now}")
     elif 12 <= hour < 18:
-        speak("Hello Gaurav, good afternoon, nice to have you back")
+        speak(f"Hello {your_user_name}, good afternoon, nice to have you back")
         time_now = datetime.datetime.now().strftime("%H:%M")
         speak(f"Sir the time is {time_now}")
     elif 18 <= hour <= 22:
-        speak("Hello Gaurav, Good Evening, nice to have you back")
+        speak(f"Hello {your_user_name}, Good Evening, nice to have you back")
         time_now = datetime.datetime.now().strftime("%H:%M")
         speak(f"Sir the time is {time_now}")
     else:
-        speak("Hello Gaurav, Good gracious you are working quite late sir")
+        speak(f"Hello {your_user_name}, Good gracious you are working quite late sir")
         time_now = datetime.datetime.now().strftime("%H:%M")
         speak(f"Sir the time is {time_now}")
 
@@ -147,6 +153,15 @@ def take_command():
     return query
 
 
+def add_birthday ():
+    speak("What is the name of the person whose birthday you want to add? ")
+    new_birthday_name = input("Enter the name of the person: ")
+    speak("Please write the birthday below")
+    new_birthday = input("Enter her birthday in format dd/mm/yyyy")
+    birthdays.update({new_birthday_name: new_birthday})
+    speak(f"{new_birthday_name} has been added to your list")
+
+
 if __name__ == "__main__":
     # wish_me()
     while True:
@@ -175,7 +190,56 @@ if __name__ == "__main__":
                 webbrowser.open(string)
             else:
                 webbrowser.open('https://moviegaga.to')
+        elif 'screenshot' in query:
+            screenshot = pyautogui.screenshot()
+            screenshot.save("/home/leo/screen.png")
 
+        elif 'corona' in query:
+            url = "https://www.worldometers.info/coronavirus"
+            r = requests.get(url)
+            s = BeautifulSoup(r.text, "html.parser")
+            data = s.find_all("div", class_="maincounter-number")
+
+            total_cases = data[0].text.strip()
+            total_deaths = data[1].text.strip()
+            total_recovered = data[2].text.strip()
+            speak("Total cases" + total_cases)
+            speak("Total deaths" + total_deaths)
+            speak(("Total recovered" + total_recovered))
+
+        elif 'music player' in query:
+            mixer.init()
+            mixer.music.load("")    # enter music locations
+            mixer.music.play()
+
+            while True:
+                print("press 'p' to pause 'r' to resume ")
+                print("press 'e' to exit the music player")
+                query = input(">>>  ")
+
+                if query == 'p':
+                    mixer.music.pause()
+                elif query == 'r':
+                    mixer.music.unpause()
+                elif query == 'e':
+                    mixer.music.stop()
+                    break
+
+        elif 'bitcoin' in query:
+            def scrapeBitcoin():
+                response = requests.get(URL+COIN)
+                response_json = response.json()
+                return float(response_json[0]['price_usd'])
+
+            URL = 'https://api/coinmarketcap.com/v1/ticker/'
+            COIN = 'bitcoin'
+            last_price = None
+
+            while True:
+                latest_price = scrapeBitcoin()
+                if latest_price != last_price:
+                    print("Latest price: ", latest_price)
+                    last_price = latest_price
         elif 'open google' in query:
             speak("Want to search something sir?")
             speak("Opening google.com")
@@ -233,13 +297,22 @@ if __name__ == "__main__":
             date_to_find_week = input("dd mm yyyy (including the spaces")
             speak(findDay(date_to_find_week))
             print(findDay(date_to_find_week))
+        elif 'add birthday' in query:
+            speak("Let's add a birthday to youe list sir.")
+            add_birthday()
         elif 'birthday' in query:
             speak("Whose birthday you want to find out: ")
             birthday_boy = str(input()).lower()
             try:
                 speak(birthday_boy + 's birthday is on' + birthdays.get(birthday_boy) + '.')
             except:
-                speak("There is no such name in your list.")
+                speak("There is no such name in your list, sir.")
+                speak("Would you like to add such name ? ")
+                should_add_name = take_command().lower()
+                if 'yes' in should_add_name or 'yup' in should_add_name or 'thrill me' in should_add_name:
+                    add_birthday()
+                else:
+                    speak("Ok I won't add anything sir, is there anything else I can help you with?")
 
         elif 'girlfriend' in query:
             speak("Concentrate on studies Gaurav and as regarding girlfriend")
@@ -266,6 +339,13 @@ if __name__ == "__main__":
                 exit()
             else:
                 os.system("shutdown /r /t 1")
+        elif 'system' in query:
+            speak("This are the features of your device\n")
+            speak(platform.platform())
+            speak(platform.system())
+            speak(platform.processor())
+            speak(platform.architecture())
+
         elif 'check instagram' in query:
             speak("Opening instagram dp downloader")
             Instagram()
