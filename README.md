@@ -88,7 +88,7 @@ You can adjust various commands as you wish, follow the below mention things.
 of them, click on properties and copy the target and replace it with 'code'. 
 Where-ever there is \ make it \\. Do the same for all.
 
-#####using send email
+##### using send email
 1) say send email
 2) using the list of emails, type the name to whom you want to send email to.
 3) Type the content of email.
