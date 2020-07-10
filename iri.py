@@ -225,7 +225,7 @@ if __name__ == "__main__":
                 elif query == 'e':
                     mixer.music.stop()
                     break
-
+        # Get price of bitcoin
         elif 'bitcoin' in query:
             def scrapeBitcoin():
                 response = requests.get(URL+COIN)
