@@ -207,7 +207,8 @@ if __name__ == "__main__":
             speak("Total cases" + total_cases)
             speak("Total deaths" + total_deaths)
             speak(("Total recovered" + total_recovered))
-
+        elif 'corona stats' in query:
+            webbrowser.open("covid-19-api.netlify.app/")
         elif 'music player' in query:
             mixer.init()
             mixer.music.load("")    # enter music locations
