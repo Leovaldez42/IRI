@@ -40,7 +40,7 @@ python3-xlib==0.15
 pyttsx3==2.81
 PyTweening==1.0.3
 pytz==2019.3
-requests==2.23.0
+requests==2.32.2
 selenium==3.141.0
 six==1.14.0
 soupsieve==2.0
